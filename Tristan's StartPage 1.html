@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Sweet Home</title>
+<link rel="stylesheet" href="style.css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'> <!-- Downloads the desired font -->
+</head>
+<body>
+<ul class="container">
+        <!-- Start Dropdown -->
+        <li><a class="parent" href="#">4chan</a> <!-- Section title -->
+                <ul class="submenu"> <!-- Links Start -->
+                        <li><a class="tab" href="https://boards.4chan.org/b/">Meme Center</a></li>
+                        <li><a class="tab" href="https://boards.4chan.org/c/">Cute</a></li>
+                        <li><a class="tab" href="https://boards.4chan.org/g/">Technology</a></li>
+                        <li><a class="tab" href="https://boards.4chan.org/pol/">Politically Incorrect</a></li>  
+						<li><a class="tab" href="https://boards.4chan.org/w/">Anime Wallpaper</a></li>
+						<li><a class="tab" href="https://boards.4chan.org/wg/">Wallpaper General</a></li>
+		
+                </ul> <!-- Links End -->
+				
+        </li>
+        <!-- End Dropdown Section -->
+        <li><a class="parent" href="#">Entertainment</a>
+                <ul class="submenu">
+                        <li><a class="tab" href="http://www.youtube.com">Youtube</a></li>
+                        <li><a class="tab" href="http://www.netflix.com">Netflix</a></li>
+                        <li><a class="tab" href="http://www.twitch.com">Twitch</a></li>
+                        
+                </ul>
+        </li>
+        <li><a class="parent" href="#">Learning</a>
+                <ul class="submenu">
+                        <li><a class="tab" href="https://www.codecademy.com/learn">Codecademy</a></li>
+                        <li><a class="tab" href="https://www.reddit.com/r/Code/">r/Code/</a></li>
+                        <li><a class="tab" href="http://bookzz.org/">Bookzz</a></li>
+                       
+                </ul>
+        </li>
+        <li><a class="parent" href="#">Social</a>
+                <ul class="submenu">
+                        <li><a class="tab" href="https://web.whatsapp.com/">WhatsApp</a></li>
+                        <li><a class="tab" href="https://www.instagram.com/">Ze Gram</a></li>
+                        <li><a class="tab" href="https://twitter.com/?lang=en">Twatter</a></li>
+                        <li><a class="tab" href="https://facebook.com">The Book Of The Face</a></li>
+                </ul>
+        </li>
+        <li><a class="parent" href="#">Music</a>
+                <ul class="submenu">
+                        <li><a class="tab" href="https://bandcamp.com/">Bandcamp</a></li>
+                        <li><a class="tab" href="https://play.spotify.com/browse">Spotify</a></li>
+                        <li><a class="tab" href="https://soundcloud.com/stream">Soundcloud</a></li>
+                        
+                </ul>
+        </li>
+</ul>
+
+<ul class="container">
+        <!-- Start Dropdown -->
+        <li><a class="parent" href="#">Other</a> <!-- Section title -->
+                <ul class="submenu"> <!-- Links Start -->
+                        <li><a class="tab" href="http://pastebin.com/">Pastebin</a></li>
+                        <li><a class="tab" href="http://www.nexusmods.com/skyrim/?">Nexus Skyrim</a></li>
+                        <li><a class="tab" href="http://www.nexusmods.com/fallout4/?">Nexus Fallout4</a></li>
+                                
+                </ul> <!-- Links End -->
+        </li>
+		
+<script>
+$('.submenu').hide();
+$("li:has(ul)").click(function(){
+$("ul",this).slideToggle('200');
+});
+</script>
+</body>
+</html>
